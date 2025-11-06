@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能按摩机器人 - 作品展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+        .video-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        video {
+            width: 100%;
+            max-width: 854px; /* 标准高清视频宽度 */
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+        .description {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            line-height: 1.6;
+        }
+        .description h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        footer {
+            margin-top: 30px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计：适配手机 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .video-container, .description { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>智能按摩机器人项目展示</h1>
+            <p class="subtitle">基于机器视觉与AI的自动化理疗解决方案</p>
+        </header>
+
+        <main>
+            <section class="video-container">
+                <!-- 视频播放器 -->
+                <!-- 请确保 src="您的视频文件名.mp4" 这里的文件名和您放入文件夹的文件名完全一致 -->
+                <video controls poster="https://img.ixintu.com/upload/jpg/202105/9999/9b5c5c5a5c.jpg">
+                    <source src="智能按摩机器人作品视频.mp4" type="video/mp4">
+                    您的浏览器不支持 HTML5 视频标签，请使用现代浏览器如 Chrome、Edge 或 Firefox 查看。
+                </video>
+            </section>
+
+            <section class="description">
+                <h2>项目简介</h2>
+                <p>本项目展示了一款新型智能化针灸机器人设备。该设备集成了高精度机器视觉、AI深度学习算法与七轴协作机器人技术，实现了对人体穴位的自动识别与精准按摩操作。</p>
+                <p><strong>核心技术指标：</strong></p>
+                <ul>
+                    <li>AI穴位识别准确率： >96% (误差＜5mm)</li>
+                    <li>机械臂重复定位精度： ±0.03mm</li>
+                    <li>具备自动拍照、识别、按摩的完整工作能力</li>
+                </ul>
+                <p>本系统为传统中医理疗的数字化与智能化提供了完整的解决方案。</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 智能医疗机器人实验室. 本项目视频仅供展示。</p>
+        </footer>
+    </div>
+</body>
+</html>
